@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <script>
+      let pregunta;
+      let pregunta2;
+      let pregunta3;
+      let suma;
+      let total;
+      let totalSuma1;
+      let totalSuma2;
+      let sumaString;
+      let numString;
+      let numString1;
+      let numString2;
+      let numString3;
+      let numString4;
+      let suma2;
+      let num1 = 0;
+      let num2 = 0;
+
+      pregunta = Number(prompt("Dime el día en que naciste"));
+      pregunta2 = Number(prompt("Dime el mes en que naciste (formato 00)"));
+      pregunta3 = Number(prompt("Dime el año en que naciste"));
+      suma = pregunta + pregunta2 + pregunta3;
+
+      let pregunta2 = Number(prompt("Dime el mes en que naciste (formato 00)"));
+      let pregunta3 = Number(prompt("Dime el año en que naciste"));
+
+      let suma = pregunta + pregunta2 + pregunta3;
+
+      window.alert("La suma de los números introducidos es de " + suma);
+
+      if (suma.length === 4) {
+        let sumaString = suma.toString();
+        let numString1 = sumaString.substring(0, 1);
+        let numString2 = sumaString.substring(1, 2);
+        let numString3 = sumaString.substring(2, 3);
+        let numString4 = sumaString.substring(3, 4);
+
+        let suma2 = numString1 + numString2 + numString3 + numString4;
+
+        window.alert(
+          "La suma de los digitos del año de tu nacimiento es de = " + suma2
+        );
+      } else {
+      }
+      while ((pregunta, pregunta2, pregunta3 !== 0));
+    </script>
+  </body>
+</html>
